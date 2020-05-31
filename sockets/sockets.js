@@ -406,7 +406,7 @@ var actionsObj = {
         if (args[1]) {
           if (isNaN(args[1]) === false) {
             return {
-              message: (Math.floor(Math.random() * args[1]) + 1).toString(),
+              message: `Choosing between 1 to ${args[1]}. Returning ${(Math.floor(Math.random() * args[1]) + 1).toString()}.`
               classStr: 'server-text',
             };
           }
@@ -417,7 +417,7 @@ var actionsObj = {
           };
         }
         return {
-          message: (Math.floor(Math.random() * 10) + 1).toString(),
+          message: `Choosing between 1 to 10. Returning ${(Math.floor(Math.random() * 10) + 1).toString()}.`,
           classStr: 'server-text',
         };
       },
